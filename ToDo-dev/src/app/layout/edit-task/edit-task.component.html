@@ -1,0 +1,18 @@
+<div class="centered-content">
+    <div class="modal-box">
+        <h1 class="title">
+            Edit Task
+        </h1>
+        <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input #TaskTitleInput class="input has-background-light is-medium" type="text" placeholder="Update Task Name">
+            </p>
+            <p class="control">
+              <a class="button is-primary is-medium has-text-white" (click)="updateTask(TaskTitleInput.value)">
+                Update
+              </a>
+            </p>
+          </div>
+          <button class="button is-danger" routerLink="/">Cancel</button>
+    </div>
+</div>
